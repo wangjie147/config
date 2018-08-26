@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/wanglede/config-repo
+          username: wangle1988918@163.com
+          password: 13092523638
+          #输出一些文件的路径。
+          basedir: C:/Users/wangl/IdeaProjects/config/basedir
+          #使用码云进行配置的设置 config-repo
+#命名格式：/{name}-{profiles}.yml       /{label}/{name}-{profiles}.yml
+#name 服务名
+#profiles  环境
+#label 分支(branch)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+
+
